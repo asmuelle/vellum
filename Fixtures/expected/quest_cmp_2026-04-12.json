@@ -1,0 +1,17 @@
+[
+  { "analyteRaw": "GLUCOSE", "valueRaw": "110", "unitRaw": "mg/dL", "refRangeRaw": "65-99", "flagRaw": "H", "collectedAtRaw": "04/12/2026 08:15" },
+  { "analyteRaw": "UREA NITROGEN (BUN)", "valueRaw": "18", "unitRaw": "mg/dL", "refRangeRaw": "7-25", "flagRaw": null, "collectedAtRaw": "04/12/2026 08:15" },
+  { "analyteRaw": "CREATININE", "valueRaw": "0.92", "unitRaw": "mg/dL", "refRangeRaw": "0.60-1.35", "flagRaw": null, "collectedAtRaw": "04/12/2026 08:15" },
+  { "analyteRaw": "EGFR", "valueRaw": "92", "unitRaw": "mL/min/1.73", "refRangeRaw": ">59", "flagRaw": null, "collectedAtRaw": "04/12/2026 08:15" },
+  { "analyteRaw": "SODIUM", "valueRaw": "139", "unitRaw": "mmol/L", "refRangeRaw": "135-146", "flagRaw": null, "collectedAtRaw": "04/12/2026 08:15" },
+  { "analyteRaw": "POTASSIUM", "valueRaw": "4.2", "unitRaw": "mmol/L", "refRangeRaw": "3.5-5.3", "flagRaw": null, "collectedAtRaw": "04/12/2026 08:15" },
+  { "analyteRaw": "CHLORIDE", "valueRaw": "102", "unitRaw": "mmol/L", "refRangeRaw": "98-110", "flagRaw": null, "collectedAtRaw": "04/12/2026 08:15" },
+  { "analyteRaw": "CARBON DIOXIDE", "valueRaw": "24", "unitRaw": "mmol/L", "refRangeRaw": "20-32", "flagRaw": null, "collectedAtRaw": "04/12/2026 08:15" },
+  { "analyteRaw": "CALCIUM", "valueRaw": "9.4", "unitRaw": "mg/dL", "refRangeRaw": "8.6-10.3", "flagRaw": null, "collectedAtRaw": "04/12/2026 08:15" },
+  { "analyteRaw": "PROTEIN, TOTAL", "valueRaw": "6.9", "unitRaw": "g/dL", "refRangeRaw": "6.1-8.1", "flagRaw": null, "collectedAtRaw": "04/12/2026 08:15" },
+  { "analyteRaw": "ALBUMIN", "valueRaw": "4.4", "unitRaw": "g/dL", "refRangeRaw": "3.6-5.1", "flagRaw": null, "collectedAtRaw": "04/12/2026 08:15" },
+  { "analyteRaw": "BILIRUBIN, TOTAL", "valueRaw": "0.6", "unitRaw": "mg/dL", "refRangeRaw": "0.2-1.2", "flagRaw": null, "collectedAtRaw": "04/12/2026 08:15" },
+  { "analyteRaw": "ALKALINE PHOSPHATASE", "valueRaw": "71", "unitRaw": "U/L", "refRangeRaw": "36-130", "flagRaw": null, "collectedAtRaw": "04/12/2026 08:15" },
+  { "analyteRaw": "AST", "valueRaw": "22", "unitRaw": "U/L", "refRangeRaw": "10-35", "flagRaw": null, "collectedAtRaw": "04/12/2026 08:15" },
+  { "analyteRaw": "ALT", "valueRaw": "19", "unitRaw": "U/L", "refRangeRaw": "9-46", "flagRaw": null, "collectedAtRaw": "04/12/2026 08:15" }
+]

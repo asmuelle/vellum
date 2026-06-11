@@ -1,0 +1,51 @@
+# XcodeGen spec — Vellum app shell (M0). The domain engine lives in the
+# local SPM package at the repo root (Package.swift, product VellumKit);
+# this target is the composition root only. Never hand-edit the
+# generated Vellum.xcodeproj — edit this file and re-run `just bootstrap`.
+name: Vellum
+options:
+  bundleIdPrefix: app.vellum
+  deploymentTarget:
+    iOS: "26.0"
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+packages:
+  VellumKit:
+    path: .
+targets:
+  Vellum:
+    type: application
+    platform: iOS
+    sources:
+      - App
+    dependencies:
+      - package: VellumKit
+        product: VellumKit
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: app.vellum.Vellum
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Vellum
+        CODE_SIGNING_ALLOWED: NO
+        CODE_SIGN_IDENTITY: ""
+        TARGETED_DEVICE_FAMILY: "1"
+schemes:
+  Vellum:
+    build:
+      targets:
+        Vellum: all
+    test:
+      targets:
+        - package: VellumKit/VellumCoreTests
+        - package: VellumKit/VellumCaptureTests
+        - package: VellumKit/VellumParsingTests
+        - package: VellumKit/VellumExtractionTests
+        - package: VellumKit/VellumReviewTests
+        - package: VellumKit/VellumVaultTests
+        - package: VellumKit/VellumTrendsTests
+        - package: VellumKit/VellumAskTests
+        - package: VellumKit/VellumExplainTests
+        - package: VellumKit/VellumDesignSystemTests

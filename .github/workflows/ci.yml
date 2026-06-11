@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  ci:
+    runs-on: macos-15
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: extractions/setup-just@v3
+
+      - name: Install Swift tooling
+        run: brew install swiftformat swiftlint
+
+      - name: Check bootstrap state
+        id: bootstrap
+        run: |
+          if [ -f project.yml ]; then
+            echo "bootstrapped=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "bootstrapped=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::project.yml not found — docs-only scaffold, skipping build/test (this is expected until milestone M0)."
+          fi
+
+      - name: Install XcodeGen
+        if: steps.bootstrap.outputs.bootstrapped == 'true'
+        run: brew install xcodegen
+
+      - name: Bootstrap project
+        if: steps.bootstrap.outputs.bootstrapped == 'true'
+        run: just bootstrap
+
+      - name: Lint, build, test
+        if: steps.bootstrap.outputs.bootstrapped == 'true'
+        run: just ci

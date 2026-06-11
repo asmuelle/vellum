@@ -1,0 +1,12 @@
+# SwiftFormat configuration — Vellum
+--swiftversion 6.0
+--indent 4
+--maxwidth 140
+--wraparguments before-first
+--wrapparameters before-first
+--wrapcollections before-first
+--stripunusedargs closure-only
+--self remove
+--commas always
+--trimwhitespace always
+--exclude .build,.swiftpm,DerivedData,Vellum.xcodeproj

@@ -1,0 +1,14 @@
+Labcorp
+Patient: Sample, Vera                                Synthetic Fixture
+Date Collected: 03/02/2026
+Date Reported: 03/03/2026
+CBC With Differential/Platelet + Electrolytes
+
+WBC                          6.4                Thousand/uL      3.4-10.8
+RBC                          4.77               Million/uL       4.14-5.80
+Hemoglobin                   14.6               g/dL             13.0-17.7
+Hematocrit                   43.1               %                37.5-51.0
+MCV                          90.4               fL               79.0-97.0
+Platelet Count               251                Thousand/uL      150-450
+Potassium                    4.4                mEq/L            3.5-5.2
+Glucose                      112    High        mg/dL            65-99

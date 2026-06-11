@@ -1,0 +1,8 @@
+ST. AMBROSE REGIONAL HOSPITAL LABORATORY
+PATIENT: SAMPLE, VERA                                SYNTHETIC FIXTURE
+DRAWN 01/15/2026 06:50
+CHEMISTRY PANEL — INPATIENT FORMAT
+
+Potassium ......... 4.1 (ref 3.5 to 5.1) mmol/L
+Sodium ............ 138 (ref 136 to 145) mmol/L
+Glucose ........... 101 (ref 70 to 99) mg/dL

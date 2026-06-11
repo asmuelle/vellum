@@ -1,0 +1,10 @@
+[
+  { "analyteRaw": "WBC", "valueRaw": "6.4", "unitRaw": "Thousand/uL", "refRangeRaw": "3.4-10.8", "flagRaw": null, "collectedAtRaw": "03/02/2026" },
+  { "analyteRaw": "RBC", "valueRaw": "4.77", "unitRaw": "Million/uL", "refRangeRaw": "4.14-5.80", "flagRaw": null, "collectedAtRaw": "03/02/2026" },
+  { "analyteRaw": "Hemoglobin", "valueRaw": "14.6", "unitRaw": "g/dL", "refRangeRaw": "13.0-17.7", "flagRaw": null, "collectedAtRaw": "03/02/2026" },
+  { "analyteRaw": "Hematocrit", "valueRaw": "43.1", "unitRaw": "%", "refRangeRaw": "37.5-51.0", "flagRaw": null, "collectedAtRaw": "03/02/2026" },
+  { "analyteRaw": "MCV", "valueRaw": "90.4", "unitRaw": "fL", "refRangeRaw": "79.0-97.0", "flagRaw": null, "collectedAtRaw": "03/02/2026" },
+  { "analyteRaw": "Platelet Count", "valueRaw": "251", "unitRaw": "Thousand/uL", "refRangeRaw": "150-450", "flagRaw": null, "collectedAtRaw": "03/02/2026" },
+  { "analyteRaw": "Potassium", "valueRaw": "4.4", "unitRaw": "mEq/L", "refRangeRaw": "3.5-5.2", "flagRaw": null, "collectedAtRaw": "03/02/2026" },
+  { "analyteRaw": "Glucose", "valueRaw": "112", "unitRaw": "mg/dL", "refRangeRaw": "65-99", "flagRaw": "High", "collectedAtRaw": "03/02/2026" }
+]

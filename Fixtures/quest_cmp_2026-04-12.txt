@@ -1,0 +1,22 @@
+QUEST DIAGNOSTICS INCORPORATED
+PATIENT: SAMPLE, VERA                                SYNTHETIC FIXTURE
+COLLECTED: 04/12/2026 08:15
+REPORTED: 04/13/2026 06:02
+COMPREHENSIVE METABOLIC PANEL
+
+TEST NAME                        RESULT        REFERENCE RANGE    UNITS
+GLUCOSE                          110 H         65-99              mg/dL
+UREA NITROGEN (BUN)              18            7-25               mg/dL
+CREATININE                       0.92          0.60-1.35          mg/dL
+EGFR                             92            >59                mL/min/1.73
+SODIUM                           139           135-146            mmol/L
+POTASSIUM                        4.2           3.5-5.3            mmol/L
+CHLORIDE                         102           98-110             mmol/L
+CARBON DIOXIDE                   24            20-32              mmol/L
+CALCIUM                          9.4           8.6-10.3           mg/dL
+PROTEIN, TOTAL                   6.9           6.1-8.1            g/dL
+ALBUMIN                          4.4           3.6-5.1            g/dL
+BILIRUBIN, TOTAL                 0.6           0.2-1.2            mg/dL
+ALKALINE PHOSPHATASE             71            36-130             U/L
+AST                              22            10-35              U/L
+ALT                              19            9-46               U/L

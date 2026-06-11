@@ -1,0 +1,44 @@
+# SwiftLint configuration — Vellum (zero-warnings policy: keep rules realistic, fix everything that fires)
+excluded:
+  - .build
+  - .swiftpm
+  - DerivedData
+  - Vellum.xcodeproj
+
+opt_in_rules:
+  - empty_count
+  - closure_spacing
+
+analyzer_rules: []
+
+line_length:
+  warning: 150
+  error: 200
+  ignores_comments: true
+  ignores_urls: true
+
+file_length:
+  warning: 800
+  error: 1000
+
+function_body_length:
+  warning: 50
+  error: 80
+
+type_body_length:
+  warning: 400
+  error: 600
+
+identifier_name:
+  min_length: 1
+  max_length: 60
+
+cyclomatic_complexity:
+  warning: 12
+  error: 20
+
+nesting:
+  type_level: 2
+
+trailing_comma:
+  mandatory_comma: true
