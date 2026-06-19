@@ -2,18 +2,7 @@
 
 > A private family medical-record vault that photographs lab results, prescriptions, and discharge papers, then extracts, trends, and explains them — unlimited capture, and not one page ever uploaded.
 
-**Category:** Edge AI / on-device inference (iOS + Android) · **Status:** ✅ Recommended (Top 5 of the edge-AI run)
-
-## Scorecard
-
-| Metric | Score |
-|---|---|
-| Rank (of 9 finalists) | #5 |
-| Combined score | 5.3 |
-| Monetization potential (1-10) | 6.5 |
-| Feasibility (1-10) | 6 |
-| Edge AI structurally essential | Yes |
-| Skeptic verdict | weakened |
+**Category:** Edge AI / on-device inference (iOS + Android) 
 
 ## Concept
 
