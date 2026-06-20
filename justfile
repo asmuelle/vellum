@@ -35,8 +35,12 @@ format:
     @command -v swiftformat >/dev/null 2>&1 || { echo "error: swiftformat not installed. Run: brew install swiftformat"; exit 1; }
     swiftformat .
 
+# verify formatting (swiftformat --lint); CI gate
+format-check:
+    swiftformat --lint .
+
 # Full local gate: lint + build + test (CI runs exactly this)
-ci: lint build test
+ci: lint build test format-check
 
 # (internal) Fail with guidance when the project has not been bootstrapped yet
 _require-bootstrap:
