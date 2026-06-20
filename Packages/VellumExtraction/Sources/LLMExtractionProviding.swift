@@ -46,12 +46,28 @@ public struct UnavailableLLMExtractionProvider: LLMExtractionProviding {
     }
 }
 
+/// A single canned proposal for `MockLLMExtractionProvider`, mirroring the
+/// raw fields an on-device model would surface verbatim from the page.
+public struct MockExtractionRow: Sendable, Equatable {
+    public let analyteRaw: String
+    public let valueRaw: String
+    public let unitRaw: String
+    public let refRangeRaw: String
+
+    public init(analyteRaw: String, valueRaw: String, unitRaw: String, refRangeRaw: String) {
+        self.analyteRaw = analyteRaw
+        self.valueRaw = valueRaw
+        self.unitRaw = unitRaw
+        self.refRangeRaw = refRangeRaw
+    }
+}
+
 /// Deterministic mock provider: returns canned proposals. Used by tests
 /// (and previews) so the full pipeline runs without any model.
 public struct MockLLMExtractionProvider: LLMExtractionProviding {
-    public let cannedRows: [(analyteRaw: String, valueRaw: String, unitRaw: String, refRangeRaw: String)]
+    public let cannedRows: [MockExtractionRow]
 
-    public init(cannedRows: [(analyteRaw: String, valueRaw: String, unitRaw: String, refRangeRaw: String)]) {
+    public init(cannedRows: [MockExtractionRow]) {
         self.cannedRows = cannedRows
     }
 

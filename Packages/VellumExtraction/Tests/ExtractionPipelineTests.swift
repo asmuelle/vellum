@@ -10,6 +10,7 @@ import VellumTestSupport
 /// observable from outside the pipeline.
 actor CallCounter {
     private(set) var count = 0
+    var isEmpty: Bool { count < 1 }
     func increment() {
         count += 1
     }
@@ -79,13 +80,13 @@ struct ExtractionPipelineTests {
             return
         }
         #expect(!values.isEmpty)
-        #expect(await spy.counter.count == 0, "invariant #2 violated: LLM consulted on a deterministically claimed page")
+        #expect(await spy.counter.isEmpty, "invariant #2 violated: LLM consulted on a deterministically claimed page")
     }
 
     @Test("Deterministic miss falls back to the mock LLM, all values tagged .llm")
     func fallbackTagsValuesAsLLM() async throws {
         let mock = MockLLMExtractionProvider(cannedRows: [
-            (analyteRaw: "POTASSIUM", valueRaw: "4.1", unitRaw: "mmol/L", refRangeRaw: "3.5-5.1"),
+            MockExtractionRow(analyteRaw: "POTASSIUM", valueRaw: "4.1", unitRaw: "mmol/L", refRangeRaw: "3.5-5.1"),
         ])
         let pipeline = ExtractionPipeline(deterministic: ParserRegistry(), llm: mock)
 
