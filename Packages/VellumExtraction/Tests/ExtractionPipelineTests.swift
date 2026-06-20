@@ -10,7 +10,10 @@ import VellumTestSupport
 /// observable from outside the pipeline.
 actor CallCounter {
     private(set) var count = 0
-    var isEmpty: Bool { count < 1 }
+    var isEmpty: Bool {
+        count < 1
+    }
+
     func increment() {
         count += 1
     }
