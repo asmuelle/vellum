@@ -5,7 +5,7 @@ app := "Vellum"
 # Preferred simulator is the iPhone 16; fall back to the first available
 # iPhone (e.g. iPhone 17 Pro on newer Xcodes) so CI and dev machines with
 # different runtimes both work.
-sim := `xcrun simctl list devices available 2>/dev/null | sed -nE 's/^ *(iPhone[^(]*[^ (]) *\(.*/\1/p' | grep -x "iPhone 16" || xcrun simctl list devices available 2>/dev/null | sed -nE 's/^ *(iPhone[^(]*[^ (]) *\(.*/\1/p' | head -n 1`
+sim := `xcrun simctl list devices available 2>/dev/null | sed -nE 's/^ *(iPhone[^(]*[^ (]) *\(.*/\1/p' | grep -m1 -x "iPhone 16" || xcrun simctl list devices available 2>/dev/null | sed -nE 's/^ *(iPhone[^(]*[^ (]) *\(.*/\1/p' | head -n 1`
 
 # List all recipes
 default:
