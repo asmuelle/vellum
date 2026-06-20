@@ -1,5 +1,7 @@
 # Vellum
 
+[![CI](https://github.com/asmuelle/vellum/actions/workflows/ci.yml/badge.svg)](https://github.com/asmuelle/vellum/actions/workflows/ci.yml)
+
 > A private family medical-record vault that photographs lab results, prescriptions, and discharge papers, then extracts, trends, and explains them — unlimited capture, and not one page ever uploaded.
 
 **Category:** Edge AI / on-device inference (iOS + Android) 
